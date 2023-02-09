@@ -55,8 +55,10 @@
             <div class="form-input-container">
               <div class="form-control">
                 <label for="year-month" class="text-label">exp. date (MM/YYY)</label>
-                <input type="number" name="month" id="month" class="input-text input-border" placeholder="MM" required min="01" max="12">
-                <input type="number" name="year" id="year" class="input-text input-border" placeholder="YY" required  min="00" max="99">
+                <input type="number" name="month" id="month" class="input-text input-border" placeholder="MM" required
+                  min="01" max="12">
+                <input type="number" name="year" id="year" class="input-text input-border" placeholder="YY" required
+                  min="00" max="99">
                 <div class="error-message"></div>
               </div>
               <div class="form-control">
@@ -69,30 +71,22 @@
             <button type="submit" class="btn-confirm">Confirm</button>
           </form>
         </div>
+        <div class="complete-container display-none">
+          <div class="complete">
+            <img src="images/icon-complete.svg" alt="" class="complete-img">
+            <div class="complete-greet">
+              Thank you!
+            </div>
+            <p class="complete-message"> We've added your card details</p>
+            <button class="btn-confirm btn-continue">Continue</button>
+          </div>
+        </div>
       </section>
     </main>
   </div>
   <script src="js/main.js"></script>
   <script src="js/validations.js"></script>
-  <!--   
-  
-  
 
-  
-
- 
-  
- -->
-
-
-
-
-
-  <!-- Completed state start -->
-
-  <!-- Thank you!
-  We've added your card details
-  Continue -->
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

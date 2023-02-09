@@ -1,9 +1,11 @@
 window.onload = iniciar;
 
 const submit = document.querySelector('.btn-confirm');
+const continuePage = document.querySelector('.btn-continue');
 
 function iniciar() {
     submit.addEventListener('click', validateForm, false);
+    continuePage.addEventListener('click', backPage, false);
 }
 
 function validateName() {
@@ -93,11 +95,31 @@ function validateCvc() {
 function validateForm(e) {
     deleteError();
     if (validateName() && validateCardNumber() && valideMonth() && valideYear() && validateCvc()) {
+        let formContainer = document.querySelector('.form-container');
+        let completeContainer = document.querySelector('.complete-container');
+        e.preventDefault()
+        formContainer.classList.add('display-none')
+        completeContainer.classList.remove('display-none');
+
         return true
     } else {
         e.preventDefault();
         return false
     }
+}
+
+function backPage() {
+    let formContainer = document.querySelector('.form-container');
+    let completeContainer = document.querySelector('.complete-container');
+
+    if (!completeContainer.classList.contains('display-none') && formContainer.classList.contains('display-none')) {
+        completeContainer.classList.add('display-none');
+        formContainer.classList.remove('display-none')
+    }
+
+    cleanForm();
+    
+
 }
 
 function error(element, message) {
@@ -139,6 +161,15 @@ function deleteError() {
 
     for (const errorMessage of errorMessages) {
         errorMessage.innerHTML = '';
+    }
+}
+
+function cleanForm(){
+    let forms = document.forms[0];
+    for (const form of forms) {
+        if (form.value !== '') {
+          form.value = ''  
+        }
     }
 }
 

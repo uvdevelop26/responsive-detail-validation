@@ -35,8 +35,8 @@
     outline: none;
 }
 
-.inline{
-   background: red;
+.display-none{
+    display: none;
 }
 .preview {
     background-image: url(../images/bg-main-mobile.png);
@@ -145,6 +145,7 @@
 .form-container {
     width: 330px;
     margin: 0 auto;
+    
 }
 
 .form-container form {
@@ -171,8 +172,6 @@
     border-radius: 8px;
     padding-left: 15px;
 }
-
-
 
 
 .input-border{
@@ -218,6 +217,29 @@ input[type="number"] {
     font-size: 1.1rem;
 }
 
+.complete-container{
+    width: 330px;
+    margin: 0 auto;
+}
+
+.complete{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.complete .complete-greet{
+   padding-top: 30px; 
+   font-size: 1.6rem;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.complete .complete-message{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: hsl(279, 6%, 55%);
+}
+
 @media (min-width: 768px) {
 
     .card-back {
@@ -252,6 +274,11 @@ input[type="number"] {
     .form-input-container>.form-control:last-child input {
         width: 100%;
         margin-right: auto;
+    }
+
+    .complete-container{
+        width: 380px;
+        margin: 0 auto;
     }
 }
 
@@ -353,6 +380,12 @@ input[type="number"] {
     .form-input-container>.form-control:last-child input {
         width: 100%px;
         margin-right: auto;
+    }
+
+    .complete-container{
+        padding: 0 20px;
+        width: 500px;
+        transition:  all 1s ease-out;;
     }
 
 
