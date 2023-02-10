@@ -20,24 +20,25 @@
     grid-auto-flow: row;
 }
 
-.error-message{
+.error-message {
     color: red;
     font-size: .8rem;
     padding-left: 5px;
 }
 
-.error-input{
+.error-input {
     border: 1.5px solid rgb(232, 14, 14);
 }
 
-.error-input:focus{
+.error-input:focus {
     border: 1px solid red;
     outline: none;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
+
 .preview {
     background-image: url(../images/bg-main-mobile.png);
     height: 35vh;
@@ -145,7 +146,7 @@
 .form-container {
     width: 330px;
     margin: 0 auto;
-    
+
 }
 
 .form-container form {
@@ -168,13 +169,13 @@
 .input-text {
     height: 43px;
     width: 100%;
-  /*   border: 1px solid hsl(270, 3%, 87%); */
+    /*   border: 1px solid hsl(270, 3%, 87%); */
     border-radius: 8px;
     padding-left: 15px;
 }
 
 
-.input-border{
+.input-border {
     border: 1px solid hsl(270, 3%, 87%);
 }
 
@@ -217,24 +218,24 @@ input[type="number"] {
     font-size: 1.1rem;
 }
 
-.complete-container{
+.complete-container {
     width: 330px;
     margin: 0 auto;
 }
 
-.complete{
+.complete {
     margin-top: 100px;
     text-align: center;
 }
 
-.complete .complete-greet{
-   padding-top: 30px; 
-   font-size: 1.6rem;
-   text-transform: uppercase;
-   letter-spacing: 4px;
+.complete .complete-greet {
+    padding-top: 30px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-.complete .complete-message{
+.complete .complete-message {
     padding-top: 15px;
     padding-bottom: 30px;
     color: hsl(279, 6%, 55%);
@@ -276,13 +277,13 @@ input[type="number"] {
         margin-right: auto;
     }
 
-    .complete-container{
+    .complete-container {
         width: 380px;
         margin: 0 auto;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
 
     .card {
         width: 100%;
@@ -382,10 +383,10 @@ input[type="number"] {
         margin-right: auto;
     }
 
-    .complete-container{
+    .complete-container {
         padding: 0 20px;
         width: 500px;
-        transition:  all 1s ease-out;;
+        transition: all 1s ease-out;
     }
 
 
