@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/uvdevelop26/responsive-detail-validation)
+- Live Site URL: [Add live site URL here]( https://uvdevelop26.github.io/responsive-detail-validation/)
 
 ## My process
 
@@ -72,7 +72,7 @@ input[type="number"] {
 ## Author
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/uvdevelop26)
--LinkedIn - (https://www.linkedin.com/in/beto-villalba-6727a021a/)
+-LinkedIn - [](https://www.linkedin.com/in/beto-villalba-6727a021a/)
 
 
 
